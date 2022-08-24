@@ -176,10 +176,10 @@ footer {
   }
 
   .introduction::before {
-    height: 6px;
+    height: 2px;
     width: 250px;
-    top: calc(100% - (0.5 * 6px));
-    border-radius: calc(0.5 * 6px);
+    top: calc(100% - (0.5 * 2px));
+    border-radius: calc(0.5 * 2px);
     left: calc(50% - (0.5 * 250px));
   }
 
