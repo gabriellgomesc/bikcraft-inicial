@@ -249,15 +249,6 @@ footer {
 }
 
 @media (max-width: 390px) {
-  body {
-    margin-top: 20px;
-  }
-
-  body,
-  header {
-    gap: 20px;
-  }
-
   .menu {
     gap: 5px;
   }
