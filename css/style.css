@@ -83,10 +83,10 @@ ul a:hover {
   content: "";
   width: 60px;
   height: 4px;
-  border-radius: 2px;
+  border-radius: calc(0.5 * 4px);
   background: #e21;
   position: absolute;
-  top: 30px;
+  top: calc(0.5 * 60px);
   right: -30px;
 }
 
@@ -176,7 +176,11 @@ footer {
   }
 
   .introduction::before {
-    display: none;
+    height: 6px;
+    width: 250px;
+    top: calc(100% - (0.5 * 6px));
+    border-radius: calc(0.5 * 6px);
+    left: calc(50% - (0.5 * 250px));
   }
 
   .subtitle {
@@ -187,14 +191,6 @@ footer {
     height: 100%;
     object-fit: cover;
     object-position: center;
-  }
-
-  .introduction {
-    order: 1;
-  }
-
-  .bike {
-    order: 1;
   }
 
   h1,
