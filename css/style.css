@@ -62,7 +62,8 @@ ul a:hover {
   font-size: 2rem;
 }
 
-.content, .content-vantagens {
+.content,
+.content-vantagens {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1000px;
@@ -153,7 +154,7 @@ footer {
   box-sizing: border-box;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
 
   header,
   body {
@@ -213,10 +214,10 @@ footer {
 
 @media (max-width: 600px) {
   body {
-    gap: 30px;
     margin-top: 20px;
   }
 
+  body,
   header {
     gap: 30px;
   }
@@ -231,7 +232,11 @@ footer {
   }
 
   .introduction::before {
-    display: none;
+    height: 6px;
+    width: 200px;
+    top: calc(100% - (0.5 * 6px));
+    border-radius: calc(0.5 * 6px);
+    left: calc(50% - (0.5 * 200px));
   }
 
   .subtitle {
