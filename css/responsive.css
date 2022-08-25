@@ -1,0 +1,99 @@
+@media (max-width: 999px) {
+
+  header,
+  body {
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .content-vantagens {
+    grid-template-columns: 1fr;
+  }
+
+  .subtitle {
+    text-align: center;
+    background-size: 1700px;
+  }
+
+  .introduction {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .introduction::before {
+    height: 6px;
+    width: 250px;
+    top: calc(100% - (0.5 * 6px));
+    border-radius: calc(0.5 * 6px);
+    left: calc(50% - (0.5 * 250px));
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    align-self: center
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    margin-top: 20px;
+  }
+
+  body,
+  header {
+    gap: 20px;
+  }
+
+  .menu {
+    gap: 10px;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .introduction {
+    text-align: left;
+    justify-items: start;
+  }
+
+  .introduction::before {
+    height: 6px;
+    width: 200px;
+    top: calc(100% - (0.5 * 6px));
+    border-radius: calc(0.5 * 6px);
+    left: calc(50% - (0.5 * 200px));
+  }
+
+  .subtitle {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .menu {
+    gap: 5px;
+  }
+}
