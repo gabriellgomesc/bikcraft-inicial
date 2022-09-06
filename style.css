@@ -129,10 +129,10 @@ h3 {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  margin: 60px 0;
+  margin: 30px 0 0 0;
   background: var(--fundo-1);
   display: grid;
-  gap: 60px;
+  gap: 30px;
   justify-items: center;
 }
 
@@ -164,8 +164,9 @@ h3 {
 
 header {
   display: grid;
-  gap: 60px;
+  gap: 30px;
   justify-items: center;
+  align-items: center;
 }
 
 ul {
@@ -282,8 +283,8 @@ ul a:hover {
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 425px) {
   .menu {
-    gap: 5px;
+    display: none;
   }
 }
