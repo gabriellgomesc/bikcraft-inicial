@@ -1,3 +1,12 @@
+html,
+body {
+  font-size: 10px;
+}
+
+a {
+  font-size: 1.6rem;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 60px 0;
@@ -26,7 +35,8 @@ h3 {
   margin: 0px;
 }
 
-p {
-  font-size: 1.25rem;
+p,
+h3 {
+  font-size: 2rem;
   line-height: 1.3;
 }
